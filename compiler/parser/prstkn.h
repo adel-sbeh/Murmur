@@ -39,3 +39,13 @@ void isrtPrsEndNTrm(){ //Insert a terminal value
     fprintf(prsFnlFilPtr, ";\n");
 
 }
+
+void isrtPrsTab(int num){ //Insert a tab space (\t)
+
+    for(int i = 0; i < num; i++){
+
+        fprintf(prsFnlFilPtr, "\t");
+
+    }
+
+}

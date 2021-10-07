@@ -260,6 +260,9 @@ void PrsProc(TmpFileStruc FilStruc, FILE *lexFilPtr){
         //2 - inside a class
         //3 - inside a function
 
+        // Insert zone whitespace
+        //isrtPrsTab(curTrmZon);
+
         if(lokForCndEnd && strcmp(cmp.nam, PARSER_OPERATORS_PARENTHESES) == 0){
 
             PrhPsd += (strcmp(cmp.cnt, PARSER_GENERAL_END) == 0) ? -1 : 1;
